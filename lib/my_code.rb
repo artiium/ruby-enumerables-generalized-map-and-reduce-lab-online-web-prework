@@ -11,13 +11,13 @@ end
 
 def reduce(array, sv=nil)
   if sv
-    sum1 = sv
+    sum = sv
     i = 1
   end
   
   while i < array.length
-  sum1 = yield(sum1, array[i])
+  sum = yield(sum, array[i])
   i += 1
 end
-sum1
+sum
 end
