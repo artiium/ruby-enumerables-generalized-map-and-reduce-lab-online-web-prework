@@ -1,5 +1,6 @@
 def map(array)
-
+new = []
+i = 0
 
 def my_own_map(source_array) 
   source_array.map { |n| n * -1}
